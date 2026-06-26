@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-orange: #f97316;
+  --brand-dark: #1a0a00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animation pour les nouvelles commandes */
+@keyframes pulse-border {
+  0%, 100% { border-color: #f97316; }
+  50% { border-color: #fed7aa; }
+}
+
+.nouvelle-commande {
+  animation: pulse-border 1.5s ease-in-out infinite;
+  border-width: 2px;
+  border-style: solid;
+}
